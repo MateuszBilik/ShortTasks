@@ -1,25 +1,26 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 class Break {
 
-    private final int HOURSINDAY = 24;
-    private final int MINUTESINHOUR = 60;
-    private final int DAYSINWEEK = 7;
+    private static final int HOURSINDAY = 24;
+    private static final int MINUTESINHOUR = 60;
+    private static final int DAYSINWEEK = 7;
+    private static final int MINUTESINTHEWEEK = MINUTESINHOUR * HOURSINDAY * DAYSINWEEK;
 
-    public int maxBreak(String S) {
-        int minutesInWeek = MINUTESINHOUR * HOURSINDAY * DAYSINWEEK;
-        if (S.isEmpty()) {
-            return minutesInWeek;
+    public int maxBreak(String schedule) {
+        if (schedule.isEmpty()) {
+            return MINUTESINTHEWEEK;
         }
-        List<Meeting> meetings = createList(S);
+        List<Meeting> meetings = createList(schedule);
         Collections.sort(meetings);
-        return findMaxBreak(minutesInWeek, meetings);
+        return findMaxBreak(meetings);
     }
 
-    private List<Meeting> createList(String S) {
-        String[] rawData = S.split(" ");
+    private List<Meeting> createList(String schedule) {
+        String[] rawData = schedule.split(" ");
         List<Meeting> meetings = new ArrayList<>();
         for (int i = 0; i < rawData.length; i += 2) {
             int hoursFromTheBeginningOfWeek = changeNameOfDayOnNumber(rawData, i) * MINUTESINHOUR;
@@ -38,7 +39,7 @@ class Break {
         return meetings;
     }
 
-    private int findMaxBreak(int minutesInWeek, List<Meeting> meetings) {
+    private int findMaxBreak(List<Meeting> meetings) {
         int maxFreeBreak = meetings.get(0).getStartFromTheBeginningOfWeek();
         int maxIndex = meetings.size() - 1;
         for (int i = 0; i < maxIndex; i++) {
@@ -48,7 +49,7 @@ class Break {
                 maxFreeBreak = breakBetweenMeetings;
             }
         }
-        int lastBreak = minutesInWeek - meetings.get(maxIndex).getEndFromTheBeginningOfWeek();
+        int lastBreak = MINUTESINTHEWEEK - meetings.get(maxIndex).getEndFromTheBeginningOfWeek();
         if(maxFreeBreak < lastBreak){
             maxFreeBreak = lastBreak;
         }
@@ -67,8 +68,8 @@ class Break {
 }
 
 class Meeting implements Comparable<Meeting> {
-    private int startFromTheBeginningOfWeek;
-    private int endFromTheBeginningOfWeek;
+    private final int startFromTheBeginningOfWeek;
+    private final int endFromTheBeginningOfWeek;
 
     public Meeting(int startFromTheBeginningOfWeek, int endFromTheBeginningOfWeek) {
         this.startFromTheBeginningOfWeek = startFromTheBeginningOfWeek;
@@ -85,8 +86,20 @@ class Meeting implements Comparable<Meeting> {
 
     @Override
     public int compareTo(Meeting o) {
-        int compareResult = Integer.compare(this.startFromTheBeginningOfWeek, o.startFromTheBeginningOfWeek);
-        return compareResult;
+        return Integer.compare(this.startFromTheBeginningOfWeek, o.startFromTheBeginningOfWeek);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Meeting meeting = (Meeting) o;
+        return startFromTheBeginningOfWeek == meeting.startFromTheBeginningOfWeek && endFromTheBeginningOfWeek == meeting.endFromTheBeginningOfWeek;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(startFromTheBeginningOfWeek, endFromTheBeginningOfWeek);
     }
 
     public int getStartFromTheBeginningOfWeek() {
