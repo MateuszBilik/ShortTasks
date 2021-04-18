@@ -1,0 +1,15 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§éŸÂøÿÿÿÿ8Çª«’ˆ/
+6
+java:S2178"Correct this "&" to "&&".(¼÷Ú8É°”ˆ/
+0
+java:S1220""Move this file to a named package.
+m	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûı¯8Œòì“ˆ/
+F
+java:S54132")Verify that "remove()" is used correctly.(÷²‰ö8øŸµ”ˆ/
+6
+java:S2178"Correct this "&" to "&&".(à¨½8É°”ˆ/
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(©Èã”úÿÿÿÿ8—ñ±“ˆ/
+;
+java:S2178"Correct this "&" to "&&".(¡İœıÿÿÿÿ8É°”ˆ/
