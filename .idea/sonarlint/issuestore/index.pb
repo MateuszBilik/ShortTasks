@@ -15,3 +15,7 @@ B
 src/Car.java,b\1\b184f31bfb9ced4bafd8971d7b0c4bbc3ab48d9a
 ?
 src/Weight.java,e\f\ef7bc781c4e641c3944f5fb8b975b13c80f85518
+F
+src/IsPalindromic.java,f\5\f543a1abcdb8bb4869be0d0ca3cd6a390d628c89
+>
+src/Class.java,2\c\2c27f73ddc40c0df82e34e5850473ba555f8d6ec

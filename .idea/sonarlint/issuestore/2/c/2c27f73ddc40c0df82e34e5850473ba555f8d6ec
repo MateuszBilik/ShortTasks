@@ -1,0 +1,15 @@
+
+c
+java:S1854#"ARemove this useless assignment to local variable "isPalindromic".(„è¹ûüÿÿÿÿ8«˜ŒªŽ/
+0
+java:S1220""Move this file to a named package.
+>
+java:S1643"Use a StringBuilder instead.(¢„‚ªøÿÿÿÿ8ÕÎôÒ/
+t	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(©õ¢Ô8«˜ŒªŽ/
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀŒÈµ8«˜ŒªŽ/
+>
+java:S1643"Use a StringBuilder instead.(¢„‚ªøÿÿÿÿ8«˜ŒªŽ/
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ÿÙš¬ýÿÿÿÿ8«˜ŒªŽ/
+T
+java:S1481 "2Remove this unused "isPalindromic" local variable.(Õµâµþÿÿÿÿ8«˜ŒªŽ/

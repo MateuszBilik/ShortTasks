@@ -1,12 +1,12 @@
 
-S
-java:S1659	"1Declare "noOfExclusiveMovies" on a separate line.(–ÕŒàúÿÿÿÿ8 ªÕ¾ˆ/
 0
 java:S1220""Move this file to a named package.
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(üäî‘8 ªÕ¾ˆ/
-v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÌÙö•8 ªÕ¾ˆ/
 `
 java:S1214"CMove constants defined in this interfaces to another class or enum.(š 8 ªÕ¾ˆ/
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¢àŞ¦úÿÿÿÿ8 ªÕ¾ˆ/
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÌÙö•8 ªÕ¾ˆ/
 v
 java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(Éßœ8 ªÕ¾ˆ/
-{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¢àŞ¦úÿÿÿÿ8 ªÕ¾ˆ/
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(üäî‘8 ªÕ¾ˆ/
+S
+java:S1659	"1Declare "noOfExclusiveMovies" on a separate line.(–ÕŒàúÿÿÿÿ8 ªÕ¾ˆ/
