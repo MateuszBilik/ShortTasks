@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 interface OnlineAccount {
     int basePrice = 120;
     int regularMoviePrice = 45;
@@ -8,6 +10,19 @@ class Account implements OnlineAccount, Comparable<Account> {
 
     int noOfRegularMovies, noOfExclusiveMovies;
     String ownerName;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return noOfRegularMovies == account.noOfRegularMovies && noOfExclusiveMovies == account.noOfExclusiveMovies && Objects.equals(ownerName, account.ownerName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(noOfRegularMovies, noOfExclusiveMovies, ownerName);
+    }
 
     // 1) Add a parameterized constructor that initializes the attributes noOfRegularMovies and noOfExclusiveMovies.
     public Account(String ownerName, int noOfRegularMovies, int noOfExclusiveMovies) {

@@ -1,7 +1,8 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ü²µÞýÿÿÿÿ8æ’õ½ˆ/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ß°Üžùÿÿÿÿ8òùð½ˆ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ü²µÞýÿÿÿÿ8æ’õ½ˆ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ò‚–æ8´àú½ˆ/
+t	java:S116"SRename this field "LastName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þ‡àžýÿÿÿÿ8¿ÃÑò“/
 0
 java:S1220""Move this file to a named package.
-U	java:S106
-"9Replace this use of System.out or System.err by a logger.(ò‚–æ8´àú½ˆ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ß°Üžùÿÿÿÿ8òùð½ˆ/
+p	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ8ŠÄÍò“/

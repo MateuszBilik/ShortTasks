@@ -1,15 +1,15 @@
 
+>
+java:S1643"Use a StringBuilder instead.(¢„‚ªøÿÿÿÿ8«˜Œª/
 c
 java:S1854#"ARemove this useless assignment to local variable "isPalindromic".(„è¹ûüÿÿÿÿ8«˜Œª/
 0
 java:S1220""Move this file to a named package.
->
-java:S1643"Use a StringBuilder instead.(¢„‚ªøÿÿÿÿ8ÕÎôÒ/
-t	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(©õ¢Ô8«˜Œª/
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀŒÈµ8«˜Œª/
->
-java:S1643"Use a StringBuilder instead.(¢„‚ªøÿÿÿÿ8«˜Œª/
 \
 java:S1118":Add a private constructor to hide the implicit public one.(ÿÙš¬ıÿÿÿÿ8«˜Œª/
+t	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(©õ¢Ô8«˜Œª/
 T
 java:S1481 "2Remove this unused "isPalindromic" local variable.(Õµâµşÿÿÿÿ8«˜Œª/
+>
+java:S1643"Use a StringBuilder instead.(¢„‚ªøÿÿÿÿ8ÕÎôÒ/
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀŒÈµ8«˜Œª/

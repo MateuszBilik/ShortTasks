@@ -19,3 +19,7 @@ F
 src/IsPalindromic.java,f\5\f543a1abcdb8bb4869be0d0ca3cd6a390d628c89
 >
 src/Class.java,2\c\2c27f73ddc40c0df82e34e5850473ba555f8d6ec
+E
+src/ZeroInTheEnd.java,b\3\b33b524b8d7ba4ca8252ab0e78454377b5e55226
+?
+src/FromTo.java,f\5\f5a825f70c75e12ab2ba9086af5d39f4b48a2443
